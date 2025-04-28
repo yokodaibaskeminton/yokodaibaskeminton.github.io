@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>洋光台バスケミントン</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0066cc;
+            --secondary: #ff6600;
+            --light: #f8f9fa;
+            --dark: #343a40;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1547347298-4074fc3086f0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        nav {
+            background-color: var(--primary);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        nav li {
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--primary);
+        }
+        .feature-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .feature {
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .feature i {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 15px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .contact-form {
+            background-color: var(--light);
+            padding: 30px;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>洋光台バスケミントン</h1>
+        <p>バスケットボールとバドミントンを楽しむ親子スポーツチーム</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">チーム紹介</a></li>
+            <li><a href="#activities">活動内容</a></li>
+            <li><a href="#membership">会員資格</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2 class="section-title">チーム紹介</h2>
+        <div class="feature-box">
+            <div class="feature">
+                <i class="fas fa-users"></i>
+                <h3>親子で参加</h3>
+                <p>洋光台地域および周辺地域に住む小学生とその保護者、指導者で構成されるチームです。</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-basketball-ball"></i>
+                <h3>バスケットボール</h3>
+                <p>基礎から楽しく学べるバスケットボール活動</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-table-tennis"></i>
+                <h3>バドミントン</h3>
+                <p>誰でも楽しめるバドミントン活動</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="activities" style="background-color: #f8f9fa;">
+        <h2 class="section-title">活動内容</h2>
+        <div class="feature-box">
+            <div class="feature">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>定期活動</h3>
+                <p>週1～2回のバスケットボールとバドミントンの練習・試合</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-trophy"></i>
+                <h3>特別活動</h3>
+                <ul style="text-align: left; padding-left: 20px;">
+                    <li>親子スポーツ大会</li>
+                    <li>スキルアップ講習会</li>
+                    <li>他団体との交流試合</li>
+                </ul>
+            </div>
+            <div class="feature">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>活動場所</h3>
+                <p>洋光台第一小学校体育館</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="membership">
+        <h2 class="section-title">会員資格</h2>
+        <div style="max-width: 600px; margin: 0 auto;">
+            <p>入会に際しては、以下の基準を満たす必要があります：</p>
+            <ul style="margin: 20px 0 20px 30px;">
+                <li>団体の趣旨と活動方針に賛同すること</li>
+                <li>未成年の場合、親子での参加が可能であること</li>
+                <li>他のメンバーと協調し、スポーツ活動に積極的に参加すること</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" style="background-color: #f8f9fa;">
+        <h2 class="section-title">お問い合わせ</h2>
+        <div style="max-width: 600px; margin: 0 auto;">
+            <p>ご質問や参加希望の方は、以下のメールアドレスまでご連絡ください：</p>
+            <p style="margin: 20px 0;"><a href="mailto:yokodai.baskeminton@gmail.com" style="color: var(--primary); font-weight: bold;">yokodai.baskeminton@gmail.com</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 洋光台バスケミントン All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
